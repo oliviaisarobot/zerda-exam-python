@@ -48,3 +48,5 @@ root.mainloop()
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
+
+The MVC means Model View Controller, which is a code structuring rule that separates the code of the data from the code of the display and the code of the working logic. The V stands for the View, which includes everything that has to do with display or the visual representation of our code - everything the user will see. The View is in a uni-directional relationship with the Controller, which means that the Controller can pull information from the View, and also update for example the positioning of certain elements. The View, however, can't influence how the Controller works, and has no connection to the Model.
