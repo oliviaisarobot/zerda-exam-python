@@ -27,12 +27,24 @@ The application is accepted if:
 ### Explain the algorithm seen in `third.py`. Use a flowchart, structogram or pseudo code. [2p]
 #### Your answer:
 
-The third exercise is using a for loop. What it does is, it goes through the letters of the string starting with the first letter. Then it checks if the current letter of the string matches the letter given as a parameter. If it does, it adds one to the counter and the for loop continues, if it doesn't, the for loop continues. The for loop will keep running until it reaches the last letter in the string.
+The third exercise is using a for loop. What it does is, it goes through the letters of the string starting with the first letter. Then it checks if the current letter of the string matches the letter given as a parameter. If it does, it adds one to the counter and the for loop continues, if it doesn't, the for loop continues. The for loop will keep running until it reaches the last letter in the string. After the last letter, it breaks out of the loop and returns the value of the counter.
 
 ![alt text](https://github.com/oliviaisarobot/zerda-exam-python/blob/master/forloop.jpg?raw=true "For loop flowchart")
 
 ### How can you create a graphical user interface and draw a rectangle on it in python? What are the tools needed for it? [2p]
 #### Your answer:
+
+First you need to import a module that will allow you to create an interface, such as Tkinter. Tkinter is a built-in graphical module for python, it means it doesn't require installation. While using Tkinter, you first need to name your mainloop ("base" or "root"). The mainloop will allow the window with all the graphical elements to stay open until you click the quit button. Within the mainloop, you need to create a canvas, by defining its containter (which will be name of your mainloop), and its width and height. Once you created the canvas, you need to pack it, to allow it to be displayed in your main window. After that, you can create a rectangle right on the canvas, by defining the x and y coordinate of its top left corner, then the x and y coordinate of its bottom right corner. Optionally, you can give your canvas a background color, or your rectangle a fill or a border color.
+
+Example code:
+
+root = Tk()
+
+canvas = Canvas(root, width=500, height=500)
+canvas.pack()
+canvas.create_rectangle(100, 100, 200, 200, fill="pink")
+
+root.mainloop()
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
