@@ -38,13 +38,13 @@ First you need to import a module that will allow you to create an interface, su
 
 Example code:
 
-root = Tk()
+```root = Tk()
 
 canvas = Canvas(root, width=500, height=500)
 canvas.pack()
 canvas.create_rectangle(100, 100, 200, 200, fill="pink")
 
-root.mainloop()
+root.mainloop()```
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
