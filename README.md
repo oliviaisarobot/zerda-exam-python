@@ -27,6 +27,10 @@ The application is accepted if:
 ### Explain the algorithm seen in `third.py`. Use a flowchart, structogram or pseudo code. [2p]
 #### Your answer:
 
+The third exercise is using a for loop. What it does is, it goes through the letters of the string starting with the first letter. Then it checks if the current letter of the string matches the letter given as a parameter. If it does, it adds one to the counter and the for loop continues, if it doesn't, the for loop continues. The for loop will keep running until it reaches the last letter in the string.
+
+![alt text](https://github.com/oliviaisarobot/zerda-exam-python/blob/master/forloop.jpg?raw=true "For loop flowchart")
+
 ### How can you create a graphical user interface and draw a rectangle on it in python? What are the tools needed for it? [2p]
 #### Your answer:
 
